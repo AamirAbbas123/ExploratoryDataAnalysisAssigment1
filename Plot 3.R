@@ -17,7 +17,7 @@ datetime <- paste(as.Date(assigmentsubset$Date), assigmentsubset$Time)
 par(mar = c(2, 4, 2, 2)) 
 with(assigmentsubset, {
   plot(Sub_metering_1~Datetime, type="l",
-       ylab="Global Active Power (kilowatts)", xlab="")
+       ylab="Energy sub metering", xlab="")
   lines(Sub_metering_2~Datetime,col='Red')
   lines(Sub_metering_3~Datetime,col='Blue')
 })
